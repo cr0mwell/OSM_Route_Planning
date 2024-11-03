@@ -1,6 +1,7 @@
 # Route Planning Project
 
-This repo contains the starter code for the Route Planning project.
+This project finds and visualizes the shortest path between two points using Open Street Maps (OSM) data and A* algorithm.
+There is a possibility to set x and y coordinates of the starting and finish points through the CLI.
 
 <img src="map.png" width="600" height="450" />
 
@@ -8,13 +9,12 @@ This repo contains the starter code for the Route Planning project.
 
 When cloning this project, be sure to use the `--recurse-submodules` flag. Using HTTPS:
 ```
-git clone https://github.com/udacity/CppND-Route-Planning-Project.git --recurse-submodules
+git clone https://github.com/cr0mwell/OSM_Route_Planning.git --recurse-submodules
 ```
 or with SSH:
 ```
-git clone git@github.com:udacity/CppND-Route-Planning-Project.git --recurse-submodules
+git clone git@github.com/cr0mwell/OSM_Route_Planning.git --recurse-submodules
 ```
-
 ## Dependencies for Running Locally
 * cmake >= 3.11.3
   * All OSes: [click here for installation instructions](https://cmake.org/install/)
@@ -52,16 +52,8 @@ Or to specify a map file:
 ```
 ./OSM_A_star_search -f ../<your_osm_file.osm>
 ```
-
-## Testing
-
-The testing executable is also placed in the `build` directory. From within `build`, you can run the unit tests as follows:
-```
-./test
-```
-
 ## Troubleshooting
-* Some students have reported issues in cmake to find io2d packages, make sure you have downloaded [this](https://github.com/cpp-io2d/P0267_RefImpl/blob/master/BUILDING.md#xcode-and-libc).
+* You may face issues in cmake to find io2d packages, make sure you have downloaded [this](https://github.com/cpp-io2d/P0267_RefImpl/blob/master/BUILDING.md#xcode-and-libc).
 * For MAC Users cmake issues: Comment these lines from CMakeLists.txt under P0267_RefImpl
     ```
     if( NOT DEFINED IO2D_WITHOUT_SAMPLES )
